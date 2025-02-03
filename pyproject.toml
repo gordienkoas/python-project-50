@@ -1,10 +1,14 @@
 [project]
 name = "hexlet-code"
 version = "0.1.0"
-description = "Add your description here"
+description = "Gendiff. My second project."
+authors = ["Gordienko Andrey"]
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = []
+packages = [
+    { include = "gendiff"}
+]
 
 [build-system]
 requires = ["hatchling"]

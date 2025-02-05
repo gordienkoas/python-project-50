@@ -13,7 +13,7 @@ jobs:
           python-version: 3.8
       - name: install dependencies
         run: |
-          pip install poetry flake8 pytest
+          pip install poetry ruff pytest
           make install
       - name: Run linter
         run: make lint

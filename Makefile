@@ -1,14 +1,8 @@
 install:
 	poetry install
 
-publish:
-	poetry publish --dry-run
-
-package-install:
-	python3 -m pip install dist/*.whl
-
-package-uninstall:
-	python3 -m pip uninstall --yes dist/*.whl
+test:
+	poetry run pytest
 
 lint:
 	poetry run ruff check .

@@ -2,9 +2,6 @@
 
 from generate_diff import generate_diff
 
-#file_path1 = 'file1.json'
-#file_path2 = 'file2.json'
-
 
 def main():
     diff = generate_diff(

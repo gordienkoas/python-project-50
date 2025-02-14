@@ -1,3 +1,5 @@
+"""Comparing two flat json files."""
+
 import json
 
 
@@ -28,11 +30,3 @@ def generate_diff(path1, path2):
                 diff_dict[f'+ {key}'] = data2[key]
     d_sorted = dict(sorted(diff_dict.items(), key=lambda x: (x[0][2:])))
     return json.dumps(d_sorted, indent=2).replace(',', '').replace('"', '')
-
-
-# Пример использования
-if __name__ == "__main__":
-    file_path1 = './gendiff/tests/file1.json'
-    file_path2 = './gendiff/tests/file2.json'
-    diff = generate_diff(file_path1, file_path2)
-    print(diff)

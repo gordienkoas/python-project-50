@@ -35,13 +35,13 @@ from tests import get_path
             'correct_result_empty.txt',
             id="empty_file"
         ),
-        # pytest.param(
-        #     'file1_tree.json',
-        #     'file2_tree.json',
-        #     'stylish',
-        #     'correct_result_tree.txt',
-        #     id="tree_json_file"
-        # ),
+        pytest.param(
+            'file1_tree.json',
+            'file2_tree.json',
+            'stylish',
+            'correct_result_tree.txt',
+            id="tree_json_file"
+        ),
         pytest.param(
             'file1_tree.yaml',
             'file2_tree.yaml',
@@ -56,13 +56,13 @@ from tests import get_path
             'correct_result_tree_plain.txt',
             id="tree_plain"
         ),
-        # pytest.param(
-        #     'file1_tree.json',
-        #     'file2_tree.json',
-        #     'json',
-        #     'correct_result_tree_json.txt',
-        #     id="tree_json"
-        # ),
+        pytest.param(
+            'file1_tree.json',
+            'file2_tree.json',
+            'json',
+            'correct_result_tree_json.txt',
+            id="tree_json"
+        ),
     ],
 )
 def test_generare_diff(test_input1, test_input2, formater, expected):

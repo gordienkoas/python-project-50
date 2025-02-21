@@ -3,3 +3,4 @@ mvenv
 .idea
 __pycache__
 dist
+agg

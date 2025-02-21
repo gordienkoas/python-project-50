@@ -1,6 +1,6 @@
+from gendiff import generate_diff
 import pytest
 
-from gendiff import generate_diff
 from tests import get_path
 
 
@@ -20,7 +20,7 @@ from tests import get_path
             'stylish',
             'correct_result.txt',
             id="flat_yaml_file"
-         ),
+        ),
         pytest.param(
             'file1.yaml',
             'file2.json',
@@ -72,4 +72,3 @@ def test_generare_diff(test_input1, test_input2, formater, expected):
         test_path1 = get_path(test_input1)
         test_path2 = get_path(test_input2)
         assert generate_diff(test_path1, test_path2, formater) == result_data
-

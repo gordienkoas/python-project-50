@@ -30,3 +30,9 @@ dev = [
 
 [project.scripts]
 gendiff = "gendiff.scripts.gendiff:main"
+
+
+[project]
+  name = "gendiff"
+  version = "0.1.0"
+  description = "A brief description of your project"

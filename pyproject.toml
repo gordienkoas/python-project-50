@@ -5,7 +5,7 @@ description = "Gendiff. My second project Hexlet school."
 authors = ["Andrey <gordienkoas@.bk.ru>"]
 readme = "README.md"
 packages = [
-    { include = "gendiff"}
+    { include = "gendiff"},
 ]
 
 [tool.poetry.dependencies]
@@ -30,9 +30,3 @@ dev = [
 
 [project.scripts]
 gendiff = "gendiff.scripts.gendiff:main"
-
-
-[project]
-  name = "gendiff"
-  version = "0.1.0"
-  description = "A brief description of your project"

@@ -5,7 +5,7 @@ description = "Gendiff. My second project Hexlet school."
 authors = ["Andrey <gordienkoas@.bk.ru>"]
 readme = "README.md"
 packages = [
-    { include = "gendiff"}
+    { include = "hexlet-code"}
 ]
 
 [tool.poetry.dependencies]
@@ -21,7 +21,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.wheel]
-packages = ["hexlet-code"]
+packages = ["gendiff"]
 
 [dependency-groups]
 dev = [

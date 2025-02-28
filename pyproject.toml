@@ -8,6 +8,9 @@ packages = [
     { include = "gendiff"},
 ]
 
+[project]
+name = "gendiff"
+
 [tool.poetry.dependencies]
 python = "^3.12"
 

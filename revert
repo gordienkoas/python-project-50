@@ -1,0 +1,10 @@
+{"version": 2, "width": 179, "height": 13, "timestamp": 1740141537, "env": {"SHELL": "/bin/bash", "TERM": "xterm-256color"}}
+[0.047473, "o", "\u001b[?2004h\u001b]0;user@user-VMware-Virtual-Platform: ~/PycharmProjects/python-project-50\u0007\u001b[01;32muser@user-VMware-Virtual-Platform\u001b[00m:\u001b[01;34m~/PycharmProjects/python-project-50\u001b[00m$ "]
+[1.286866, "o", "gendiff -f json tests/fixtures/file1.json tests/fixtures/file2.json"]
+[3.579486, "o", "\r\n\u001b[?2004l\r"]
+[3.650271, "o", "[\r\n    {\r\n        \"key\": \"follow\",\r\n        \"operation\": \"removed\",\r\n        \"old\": false\r\n    },\r\n    {\r\n        \"key\": \"host\",\r\n        \"operation\": \"same\",\r\n        \"value\": \"hexlet.io\"\r\n    },\r\n    {\r\n        \"key\": \"proxy\",\r\n        \"operation\": \"removed\",\r\n        \"old\": \"123.234.53.22\"\r\n    },\r\n    {\r\n        \"key\": \"timeout\",\r\n        \"operation\": \"changed\",\r\n        \"old\": 50,\r\n        \"new\": 20\r\n    },\r\n    {\r\n        \"key\": \"verbose\",\r\n        \"operation\": \"add\",\r\n        \"new\": true\r\n    }\r\n]\r\n"]
+[3.658469, "o", "\u001b[?2004h\u001b]0;user@user-VMware-Virtual-Platform: ~/PycharmProjects/python-project-50\u0007\u001b[01;32muser@user-VMware-Virtual-Platform\u001b[00m:\u001b[01;34m~/PycharmProjects/python-project-50\u001b[00m$ "]
+[7.977136, "r", "179x20"]
+[7.977351, "o", "\r\u001b[K\r\u001b]0;user@user-VMware-Virtual-Platform: ~/PycharmProjects/python-project-50\u0007\u001b[01;32muser@user-VMware-Virtual-Platform\u001b[00m:\u001b[01;34m~/PycharmProjects/python-project-50\u001b[00m$ "]
+[10.282676, "o", "\u001b[?2004l\r\r\n"]
+[10.285018, "o", "exit\r\n"]

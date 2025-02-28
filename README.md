@@ -25,7 +25,7 @@ Runs from the command line and calculates the differences between two files. Cur
 
 **Comparison of two-flat files: JSON.**
 
-[![asciicast]
+[![asciicast](https://github.com/gordienkoas/python-project-50/blob/main/asciinema/json.gif)][https://github.com/gordienkoas/python-project-50/blob/main/asciinema/json.gif]
 
 **Comparison of two flat files: YAML(YML).**
 

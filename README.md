@@ -7,21 +7,82 @@
 # ABOUT PROJECT 
 
 This project focuses on working with collections. Methods for constructing and traversing trees are studied. You will become familiar with different data formats (JSON, YAML), learn how to parse and form them. Start writing tests (pytest) and master development using them. Learn about continuous integration (CI) and elements of extreme programming (XP)
-    
 
-# DESCRIPTION:
+## INSTALLATION
 
-****Difference Calculator****
+To install, clone the repository and install using `poetry`:
+```sh
+git clone https://github.com/gordienkoas/python-project-50
+cd gendiff
+poetry install
+```
+## Usage
 
-Runs from the command line and calculates the differences between two files. Currently works with JSON and YAML.
+To display usage information:
 
-**Start help:**
+```sh
+poetry run gendiff -h
+```
 
-`gendiff -h`
+Example of comparing two files:
 
-**Running the script with default settings:**
+```sh
+poetry run gendiff filepath1.json filepath2.json
+```
 
-`gendiff <file_path1> <file_path2>`
+The output will appear in the following format:
+
+```json
+{
+  - follow: false
+    host: hexlet.io
+  - proxy: 123.234.53.22
+  - timeout: 50
+  + timeout: 20
+  + verbose: true
+}
+```
+
+## Command Line Options
+
+- `-h, --help` — display this help message and exit.
+- `-f FORMAT, --format FORMAT` — set the output format (supported formats: `plain`, `json`, `stylish`).
+
+## Output Formats
+
+### Stylish
+
+The default format. Shows changes in a tree structure.
+
+### Plain
+
+A flat text format, convenient for human reading:
+
+```sh
+Property 'common.follow' was added with value: false
+```
+
+### JSON
+
+Outputs the changes in JSON format, convenient for machine processing.
+
+## Development
+
+### Tests
+
+To run tests, use the following command:
+
+```sh
+poetry run pytest
+```
+
+### Linter
+
+To check the code with the linter, execute:
+
+```sh
+make lint
+```
 
 **Comparison of two-flat files: JSON.**
 

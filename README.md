@@ -33,4 +33,12 @@ Runs from the command line and calculates the differences between two files. Cur
 
 **Comparison of two files with a recursive structure: YAML(YML) or JSON.**
 
-[![asciicast]
+[![asciicast](https://github.com/gordienkoas/python-project-50/blob/main/asciinema/step3.gif)](https://github.com/gordienkoas/python-project-50/blob/main/asciinema/step3.gif)
+
+**Comparison of two files  (flat format)**
+
+[![asciicast](https://github.com/gordienkoas/python-project-50/blob/main/asciinema/step3.gif)](https://github.com/gordienkoas/python-project-50/blob/main/asciinema/step3.gif)
+
+**Output the comparison result in JSON format.**
+
+[![asciicast](https://github.com/gordienkoas/python-project-50/blob/main/asciinema/step4.gif)](https://github.com/gordienkoas/python-project-50/blob/main/asciinema/step4.gif)

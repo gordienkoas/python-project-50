@@ -1,12 +1,17 @@
-[tool.poetry]
-name = "hexlet-code"
+#[tool.poetry]
+#name = "hexlet-code"
+#version = "0.1.0"
+#description = "Gendiff. My second project Hexlet school."
+#authors = ["Andrey <gordienkoas@.bk.ru>"]
+#readme = "README.md"
+#packages = [
+#    { include = "gendiff"},
+#]
+
+[project]
+name = "gendiff"
 version = "0.1.0"
-description = "Gendiff. My second project Hexlet school."
-authors = ["Andrey <gordienkoas@.bk.ru>"]
-readme = "README.md"
-packages = [
-    { include = "gendiff"},
-]
+requires-python = ">=3.12"
 
 [tool.poetry.dependencies]
 python = "^3.12"
@@ -19,6 +24,7 @@ pytest-cov = "^4.0.0"
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
+requires-python = ">=3.12"
 
 [tool.hatch.build.targets.wheel]
 packages = ["gendiff"]

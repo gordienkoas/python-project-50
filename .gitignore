@@ -1,5 +1,6 @@
 mvenv
 .venv
+venv2
 .idea
 __pycache__
 dist

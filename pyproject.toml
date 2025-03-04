@@ -1,17 +1,16 @@
-#[tool.poetry]
-#name = "hexlet-code"
-#version = "0.1.0"
-#description = "Gendiff. My second project Hexlet school."
-#authors = ["Andrey <gordienkoas@.bk.ru>"]
-#readme = "README.md"
-#packages = [
-#    { include = "gendiff"},
-#]
+[tool.poetry]
+name = "hexlet-code"
+version = "0.1.0"
+description = "Gendiff. My second project Hexlet school."
+authors = ["Andrey <gordienkoas@.bk.ru>"]
+readme = "README.md"
+packages = [
+    { include = "gendiff"},
+]
 
 [project]
 name = "gendiff"
 version = "0.1.0"
-requires-python = ">=3.12"
 
 [tool.poetry.dependencies]
 python = "^3.12"

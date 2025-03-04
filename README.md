@@ -29,7 +29,7 @@ Runs from the command line and calculates the differences between two files. Cur
 
 **Comparison of two flat files: YAML(YML).**
 
-[![asciicast](https://github.com/gordienkoas/python-project-50/blob/main/asciinema/yaml3.gif)
+[![asciicast](https://github.com/gordienkoas/python-project-50/blob/main/asciinema/yaml3.gif)](https://github.com/gordienkoas/python-project-50/blob/main/asciinema/yaml3.gif)
 
 **Comparison of two files with a recursive structure: YAML(YML) or JSON.**
 

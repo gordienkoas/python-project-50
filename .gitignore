@@ -5,3 +5,6 @@ venv2
 __pycache__
 dist
 agg
+.python-version
+coverage.xml
+.coverage

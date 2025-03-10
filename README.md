@@ -8,6 +8,13 @@
 
 This project focuses on working with collections. Methods for constructing and traversing trees are studied. You will become familiar with different data formats (JSON, YAML), learn how to parse and form them. Start writing tests (pytest) and master development using them. Learn about continuous integration (CI) and elements of extreme programming (XP)
 
+## Requirements 
+- Python 3.12
+- Poetry
+- make
+- pip
+- pipx(optional)
+
 ## INSTALLATION
 
 To install, clone the repository and install using `poetry`:

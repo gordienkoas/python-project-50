@@ -1,24 +1,27 @@
 from typing import Any
 
-DEFAULT_INDENT = 4
+from gendiff.consts import DEFAULT_INDENT
+
+
+def format_dict(value: dict, depth: int) -> str:
+    lines = ['{']
+    for key, nested_value in value.items():
+        lines.append(f"{' ' * depth}    "
+                     f"{key}: {to_str(nested_value, depth + DEFAULT_INDENT)}")
+    lines.append(f'{" " * depth}}}')
+    return '\n'.join(lines)
 
 
 def to_str(value: Any, depth: int) -> str:
-    if isinstance(value, dict):
-        lines = ['{']
-        for key, nested_value in value.items():
-            if isinstance(nested_value, dict):
-                new_value = to_str(nested_value, depth + DEFAULT_INDENT)
-                lines.append(f"{' ' * depth}    {key}: {new_value}")
-            else:
-                lines.append(f"{' ' * depth}    {key}: {nested_value}")
-        lines.append(f'{" " * depth}}}')
-        return '\n'.join(lines)
-    if isinstance(value, bool):
-        return str(value).lower()
-    if value is None:
-        return 'null'
-    return value
+    match value:
+        case dict():
+            return format_dict(value, depth)
+        case bool():
+            return str(value).lower()
+        case None:
+            return 'null'
+        case _:
+            return str(value)
 
 
 def line_forming(dictionary: dict, key: Any, depth: int, sign: str) -> str:

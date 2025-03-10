@@ -1,16 +1,18 @@
 from typing import Any, Union
 
 
-def to_str(value: Any) -> [Union[str, int]]:
-    if isinstance(value, dict):
-        return "[complex value]"
-    if isinstance(value, bool):
-        return str(value).lower()
-    if value is None:
-        return "null"
-    if isinstance(value, int):
-        return value
-    return f"'{value}'"
+def to_str(value: Any) -> Union[str, int]:
+    match value:
+        case dict():
+            return "[complex value]"
+        case bool():  # Булевое значение будет правильно обработано
+            return str(value).lower()
+        case None:
+            return "null"
+        case int():
+            return value
+        case _:
+            return f"'{value}'"
 
 
 def build_plain_iter(diff: dict, path="") -> str:

@@ -7,3 +7,6 @@ line-length = 80
 [lint]
 preview = true
 select = ["E", "F", "I", "C90"]
+
+# Assume Python 3.12
+target-version = "py312"

@@ -34,4 +34,5 @@ dev = [
     "pytest-cov>=6.0.0",
     "pyyaml>=6.0.2",
     "ruff>=0.8.6",
+    "python>=3.12",
 ]

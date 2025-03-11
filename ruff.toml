@@ -7,4 +7,3 @@ line-length = 80
 [lint]
 preview = true
 select = ["E", "F", "I", "C90"]
-target-version = "py313"

@@ -1,9 +1,9 @@
 version = 1
+revision = 1
 requires-python = ">=3.12"
 
 [[package]]
 name = "hexlet-code"
-requires-python = ">=3.12"
 version = "0.1.0"
 source = { editable = "." }
 dependencies = [
@@ -19,7 +19,7 @@ dev = [
 requires-dist = [{ name = "pyyaml", specifier = ">=6.0.2" }]
 
 [package.metadata.requires-dev]
-dev = [{ name = "ruff", specifier = "0.9.7" }]
+dev = [{ name = "ruff", specifier = ">=0.9.4" }]
 
 [[package]]
 name = "pyyaml"

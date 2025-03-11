@@ -6,18 +6,19 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - name: Set up Python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v5
         with:
-          python-version: 3.12
-      - name: install dependencies
-        run:
+          python-version: '3.12'
+        # make depends on uv
+      - name: Install dependencies
+        run: |
+          pip install uv
           make install
-      - name: Run linter
-        run: make lint
-      - name: tests
-        run: make test
+      - name: Run linter and pytest
+        run: |
+          make check
       - name: Test & publish code coverage
         uses: paambaati/codeclimate-action@v3.2.0
         if: github.ref_name == 'main'

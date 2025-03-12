@@ -1,4 +1,4 @@
-def build_diff(parced_data1: dict, parced_data2: dict):
+def make_diff_tree(parced_data1: dict, parced_data2: dict):
     diff = list()
     sorted_keys = sorted(parced_data1.keys() | parced_data2.keys())
     for key in sorted_keys:

@@ -1,7 +1,7 @@
 from os.path import splitext
 
 from gendiff.consts import EXTENSIONS
-from gendiff.dicts_diff import build_diff
+from gendiff.make_diff_tree import make_diff_tree
 from gendiff.formaters import get_formatter
 from gendiff.parser import parse
 
@@ -26,6 +26,6 @@ def generate_diff(path_file1: str, path_file2: str,
     data2, format2 = read_file_content(path_file2)
     parced_data1 = parse(data1, format1)
     parced_data2 = parse(data2, format2)
-    diff = build_diff(parced_data1, parced_data2)
+    diff = make_diff_tree(parced_data1, parced_data2)
     return get_formatter(formater)(diff)
 

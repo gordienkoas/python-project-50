@@ -10,11 +10,12 @@ This project focuses on working with collections. Methods for constructing and t
 
 ## Requirements 
 - Python 3.12
-- Poetry
+- uv
 - make
 - pip
 - pipx(optional)
-
+- ruff
+  
 ## INSTALLATION
 
 To install, clone the repository and install using `poetry`:

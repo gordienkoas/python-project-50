@@ -1,8 +1,6 @@
 def build_diff(parced_data1: dict, parced_data2: dict):
     diff = list()
-    sorted_keys = sorted(
-        list(set(parced_data1.keys()) | set(parced_data2.keys()))
-    )
+    sorted_keys = sorted(parced_data1.keys() | parced_data2.keys())
     for key in sorted_keys:
         if key not in parced_data1:
             diff.append({

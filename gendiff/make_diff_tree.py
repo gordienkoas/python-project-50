@@ -16,7 +16,7 @@ def make_diff_tree(parced_data1: dict, parced_data2: dict):
             })
         elif isinstance(parced_data1[key], dict) and isinstance(
                 parced_data2[key], dict):
-            child = build_diff(parced_data1[key], parced_data2[key])
+            child = make_diff_tree(parced_data1[key], parced_data2[key])
             diff.append({
                 'key': key,
                 'operation': 'nested',

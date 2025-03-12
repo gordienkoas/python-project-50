@@ -1,8 +1,8 @@
 from os.path import splitext
 
 from gendiff.consts import EXTENSIONS
-from gendiff.make_diff_tree import make_diff_tree
 from gendiff.formaters import get_formatter
+from gendiff.make_diff_tree import make_diff_tree
 from gendiff.parser import parse
 
 
